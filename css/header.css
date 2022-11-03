@@ -1,0 +1,97 @@
+@import url('root.css');
+.nav {
+    max-height: 100%;
+}
+.nav__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 180px;
+    height: 60px;
+}
+.img {
+    width: 100%;
+    height: 100%;
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: clamp(0.25rem, -0.713rem + 3.62vw, 2rem);
+}
+.links {
+    gap: clamp(0.25rem, -0.713rem + 3.62vw, 2rem);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-link {
+    color: var(--primary-color);
+    font-family: var(--thirdly-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3,5%;
+    display: inline-block;
+    position: relative;
+}
+.nav-link:active {
+    color: var(--secondary-color);
+}
+.link {
+    text-decoration: none;
+}
+.nav-link:after {
+	content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid var(--secondary-color);
+    margin-top: 8px;
+    opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+.nav-link:hover:after {
+    opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+/*-----------------------------------------------------*/
+.sp {
+    color: var(--secondary-color);
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-button {
+    width: 125px;
+    height: 45px;
+    border-radius: 100px;
+    border: 2px solid var(--primary-color);
+    padding: 8px, 20px, 8px, 20px;
+    color: var(--primary-color);
+    background: transparent;
+    gap: 8px;
+    position: relative;
+    /*-----------------------------------------------------*/
+    color: var(--primary-color);
+    font-family: var(--thirdly-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 10%;
+    transition: 1s;
+}
+.nav-button:hover {
+    border-color: var(--secondary-color);
+    transition: 0.8s;
+}

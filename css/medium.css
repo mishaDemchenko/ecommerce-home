@@ -1,0 +1,106 @@
+.medium {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F6E6CD;
+}
+.medium__text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-left: 80px;
+    margin-right: 60px;
+    text-align: left;
+    gap: 24px;
+}
+.medium-title {
+    font-family: var(--secondary-font);
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 67px;
+    letter-spacing: 0.01em;
+    color: var(--primary-color);
+    position: relative;
+    animation-name: title;
+    animation-duration: 2s;
+}
+.medium-text {
+    font-family: var(--thirdly-font);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    position: relative;
+    animation-name: text;
+    animation-duration: 2s;
+}
+.orange-button {
+    height: 59px;
+    width: 185px;
+    border-radius: 100px;
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+    box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.18);
+    border: none;
+    /*-----------------------------------------------------*/
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: white;
+    /*-----------------------------------------------------*/
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-size: 300% 100%;
+    /*-----------------------------------------------------*/
+    position: relative;
+    top: 0;
+    animation-name: orange-button;
+    animation-duration: 2s;
+}
+.orange-button:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.orange-button:focus {
+    outline: none;
+}
+/*-----------------------------------------------------*/
+@keyframes title {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 20px;
+    }
+    100% {
+        left: 0;
+    }
+}
+@keyframes text {
+    0% {
+        right: 0;
+    }
+    50% {
+        right: 20px;
+    }
+    100% {
+        right: 0;
+    }
+}
+@keyframes orange-button {
+    0% {
+        top: 200px;
+    }
+    100% {
+        top: 0;
+    }
+}
