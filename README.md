@@ -1,1 +1,2 @@
-# ecommerce-home
+# Ecommerce home page
+not adaptive
