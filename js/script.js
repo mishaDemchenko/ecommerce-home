@@ -25,8 +25,6 @@ const swiper = new Swiper('.swiper', {
         }
     }
     });
-
-    
         
 // ------------------------------------------------
 const burger = document.querySelector('.burger');

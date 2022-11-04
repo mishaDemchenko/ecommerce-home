@@ -43,11 +43,10 @@
     letter-spacing: 3.5%;
     display: inline-block;
     position: relative;
-    transition: 1s;
+    transition: all 1s;
 }
 .nav-link:hover {
-    bottom: 2px;
-    transition: 1s;
+    transform: translate(2px, -5px);
 }
 .nav-link:active {
     color: var(--secondary-color);
@@ -200,3 +199,4 @@
         top: 50%;
     }
 }
+/*-----------------------------------------------------*/

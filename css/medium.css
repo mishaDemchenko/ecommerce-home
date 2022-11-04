@@ -24,9 +24,11 @@
     position: relative;
     animation-name: title;
     animation-duration: 2s;
+    transition: transform 0.5s;
 }
-.medium-title::selection {
-    background-color: var(--secondary-color);
+.medium-title:hover {
+    transform: translate(0px, -2px);
+    transition: all 0.5;
 }
 .medium-text {
     font-family: var(--thirdly-font);
@@ -38,17 +40,17 @@
     position: relative;
     animation-name: text;
     animation-duration: 2s;
+    transition: all 0.5s;
 }
-.medium-text::selection {
-    background-color: var(--secondary-color);
+.medium-text:hover {
+    transform: translate(0, -2px);
+    transition: transform 0.5;
 }
 .orange-button {
     min-height: 59px;
     max-width: 185px;
     display: inline-block;
     border-radius: 100px;
-    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
-
     box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.18);
     border: none;
     /*-----------------------------------------------------*/
@@ -58,27 +60,21 @@
     line-height: 24px;
     letter-spacing: 0.1em;
     color: white;
-    /*-----------------------------------------------------*/
-    transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    background-size: 300% 100%;
+    background-color: var(--secondary-color);
     /*-----------------------------------------------------*/
     position: relative;
     top: 0;
     animation-name: orange-button;
     animation-duration: 2s;
-}
-.orange-button::selection {
-    background-color: var(--secondary-color);
+    transition: all 0.5s;
 }
 .orange-button:hover {
-    background-position: 100% 0;
-    transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    background-color: #fff;
+    border: none;
+    color: black;
+    transform: scale(0.9);
+    transition: all 0.5s;
+    box-shadow: 0px 20px 24px -4px rgba(244, 119, 38, 0.4), 0px 8px 8px -4px rgba(244, 119, 38, 0.3);
 }
 .orange-button:focus {
     outline: none;

@@ -42,7 +42,9 @@ ol[class] {
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
-
+a {
+  text-decoration: none;
+}
 img {
   max-width: 100%;
   display: block;
@@ -67,7 +69,7 @@ select {
   }
 }
 /*-----------------------------------------------------*/
-[class*='__container'] {
+[class*="__container"] {
     max-width: 1312px;
     margin: 0 auto;
 }
