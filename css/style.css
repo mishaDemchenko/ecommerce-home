@@ -85,3 +85,6 @@ select {
     background-color: #F6E6CD;
 }
 /*-----------------------------------------------------*/
+*::selection {
+  background-color: var(--secondary-color);
+}
