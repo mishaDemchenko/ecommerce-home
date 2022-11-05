@@ -38,15 +38,15 @@
         justify-content: center;
     }
     .nav-button {
-        border-color: #fff;
-        color: white;
+        border-color: #fff !important;
+        color: white !important; 
     }
     .nav-button span {
-        color: var(--primary-color);
+        color: var(--primary-color) !important;
     }
     .nav-button:hover {
-        background-color: #fff;
-        color: var(--primary-color);
+        background-color: #fff !important;
+        color: var(--primary-color) !important;
     }
     .medium {
         background-color: #F6E6CD !important;
