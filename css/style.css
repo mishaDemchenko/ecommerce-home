@@ -72,6 +72,7 @@ select {
 [class*="__container"] {
     max-width: 1312px;
     margin: 0 auto;
+    padding: 0 15px 0 15px;
 }
 /*-----------------------------------------------------*/
 .wrapper {
@@ -90,3 +91,18 @@ select {
 *::selection {
   background-color: var(--secondary-color);
 }
+span,
+a,
+p,
+h1,h2,h3,
+h4,h5,h6 {
+    transition: 0.5s;
+}
+span:hover,
+p:hover,
+h1:hover,h2:hover,h3:hover,
+h4:hover,h5:hover,h6:hover {
+    transform: translate(0px, -2px);
+    transition: all 0.5;
+}
+/*-----------------------------------------------------*/

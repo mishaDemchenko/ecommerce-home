@@ -109,17 +109,3 @@ transition: 0.5s;
   letter-spacing: 0em;
   text-align: center;
 }
-/*-----------------------------------------------------*/
-@media (max-width: 508px) {
-  .input {
-    justify-content: center;
-  }
-}
-@media (max-width: 456px) {
-  .here {
-    color: var(--secondary-color);
-  }
-  .here::selection {
-    color: white;
-  }
-}

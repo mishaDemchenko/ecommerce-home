@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: row;
     gap: clamp(0.25rem, -0.713rem + 3.62vw, 2rem);
+    align-items: center;
 }
 .links {
     gap: clamp(0.25rem, -0.713rem + 3.62vw, 2rem);
@@ -62,7 +63,7 @@
     display: inline-block;
     height: 1em;
     width: 100%;
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
     margin-top: 8px;
     opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -118,85 +119,3 @@
 .lock {
     overflow: hidden;
 }
-@media (max-width: 560px) {
-    .medium-img {
-        position: absolute;
-        z-index: 1;
-    }
-    .medium__text {
-        z-index: 2;
-    }
-    .medium-title {
-        color: white !important;
-    }
-/*-----------------------------------------------------*/
-    .burger {
-        margin-right: 20px;
-    }
-    .links {
-        position: fixed;
-        right: 150%;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        padding: 50px;
-        transition: right 0.5s ease 0s;
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 40px !important;
-        font-size: 20px !important;
-        margin-right: 0 !important;
-        z-index: 10;
-    }
-    .open {
-        right: 0%;
-        overflow-x: hidden;
-    }
-    .burger {
-        display: block;
-        position: relative;
-        cursor: pointer;
-        z-index: 15;
-        width: 30px !important;
-        height: 18px !important;
-        margin-left: clamp(1.875rem, -17.292rem + 95.83vw, 16.25rem);
-    }
-    .burger span,
-    .burger::before,
-    .burger::after {
-        left: 0;
-        position: absolute;
-        height: 10%;
-        width: 100%;
-        transition: all 0.3s ease 0s;
-        background-color: var(--primary-color);
-    }
-    .burger::before,
-    .burger::after {
-        content: "";
-    }
-
-    .burger::after {
-        top: 0;
-    }
-    .burger::before{
-        bottom: 0;
-    }
-    .burger span {
-        top: 50%;
-        transform: scale(1) translate(0px, -50%);
-    }
-    .burger.active span {
-        display: none !important;
-    }
-    .burger.active::before {
-        transform: rotate(45deg);
-        top: 50%;
-    }
-    .burger.active::after {
-        transform: rotate(-45deg);
-        top: 50%;
-    }
-}
-/*-----------------------------------------------------*/

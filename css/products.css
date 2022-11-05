@@ -71,8 +71,8 @@
 /*-----------------------------------------------------*/
 .slides__container {
   margin-top: 78px;
-  margin-bottom: 200px;
   display: flex;
+  margin-bottom: 112px;
 }
 .swiper-wrapper {
   display: flex;
@@ -116,20 +116,6 @@
   line-height: 30px;
   letter-spacing: 0.035em;
   text-align: left;
-}
-/*-----------------------------------------------------*/
-@media (max-width: 614px) {
-  .trending {
-    position: relative;
-  }
-  .titles {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .buttons {
-    align-self: start;
-    position: relative;
-  }
 }
 /*-----------------------------------------------------*/
 .swiper-link {

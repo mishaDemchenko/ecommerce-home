@@ -3,6 +3,9 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
+    centeredSlides:true,
+    initialSlide: 2,
+
 
     autoplay: {
         delay: 3500,
@@ -20,7 +23,7 @@ const swiper = new Swiper('.swiper', {
         991: {
             slidesPerView: 3
         },
-        1200: {
+        1241: {
             slidesPerView: 4,
         }
     }
